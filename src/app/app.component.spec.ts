@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'gateway'`, () => {
+  it(`should have as title 'Angular12RefreshToken'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('gateway');
+    expect(app.title).toEqual('Angular12RefreshToken');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('gateway app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Angular12RefreshToken app is running!');
   });
 });
